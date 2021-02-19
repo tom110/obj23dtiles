@@ -1,0 +1,94 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Python39\Scripts\;C:\Python39\;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Users\tomye\OneDrive\script;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\OpenJDK\openjdk-8u262-b10\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Microsoft VS Code Insiders\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\tools\miniconda3\condabin;D:\code\android\android-sdk-windows\tools;C:\Android;C:\Windows\System32;C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin;C:\spatialite;C:\Users\tomye\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\tomye\AppData\Local\Yarn\bin;C:\Users\tomye\AppData\Roaming\npm;C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin;
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.10.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/bluebird: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 1080
+      at ClientRequest.onError (C:\Program Files (x86)\Yarn\lib\cli.js:152235:17)
+      at Object.onceWrapper (events.js:421:26)
+      at ClientRequest.emit (events.js:314:20)
+      at Socket.socketErrorListener (_http_client.js:469:9)
+      at Socket.emit (events.js:314:20)
+      at emitErrorNT (internal/streams/destroy.js:106:8)
+      at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "obj2gltf",
+    "version": "3.1.0",
+    "description": "Convert OBJ model format to glTF",
+    "license": "Apache-2.0",
+    "contributors": [
+      {
+        "name": "Cesium GS, Inc. and Contributors",
+        "url": "https://github.com/CesiumGS/obj2gltf/graphs/contributors"
+      }
+    ],
+    "keywords": [
+      "obj",
+      "gltf"
+    ],
+    "homepage": "https://github.com/CesiumGS/obj2gltf",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:CesiumGS/obj2gltf.git"
+    },
+    "bugs": {
+      "url": "https://github.com/CesiumGS/obj2gltf/issues"
+    },
+    "main": "index.js",
+    "engines": {
+      "node": ">=4.0.0"
+    },
+    "dependencies": {
+      "bluebird": "^3.7.2",
+      "cesium": "^1.71.0",
+      "fs-extra": "^9.0.1",
+      "jpeg-js": "^0.4.1",
+      "mime": "^2.4.6",
+      "pngjs": "^5.0.0",
+      "yargs": "^15.4.1"
+    },
+    "devDependencies": {
+      "cloc": "^2.5.1",
+      "coveralls": "^3.1.0",
+      "eslint": "^7.5.0",
+      "eslint-config-cesium": "^8.0.1",
+      "gulp": "^4.0.2",
+      "jasmine": "^3.6.1",
+      "jasmine-spec-reporter": "^5.0.2",
+      "jsdoc": "^3.6.5",
+      "nyc": "^15.1.0",
+      "open": "^7.1.0"
+    },
+    "scripts": {
+      "jsdoc": "jsdoc ./lib -R ./README.md -d doc",
+      "eslint": "eslint \"./**/*.js\" --cache --quiet",
+      "test": "gulp test",
+      "test-watch": "gulp test-watch",
+      "coverage": "gulp coverage",
+      "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+      "cloc": "gulp cloc"
+    },
+    "bin": {
+      "obj2gltf": "./bin/obj2gltf.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
