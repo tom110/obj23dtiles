@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/bin/obj23dtiles.js",
-            "args": ["-i","C:\\Users\\tomye\\Desktop\\cube.obj","--tileset"]
+            "args": ["-i","C:\\Users\\tomye\\Desktop\\untitled.obj","--tileset"]
         }
     ]
 }

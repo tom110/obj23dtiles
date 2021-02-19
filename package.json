@@ -1,25 +1,25 @@
 {
-  "name": "obj2gltf",
+  "name": "obj23dtiles",
   "version": "3.1.0",
-  "description": "Convert OBJ model format to glTF",
+  "description": "Convert OBJ model format to 3dtiles",
   "license": "Apache-2.0",
   "contributors": [
     {
-      "name": "Cesium GS, Inc. and Contributors",
-      "url": "https://github.com/CesiumGS/obj2gltf/graphs/contributors"
+      "name": "GIS EDEN. and Contributors",
+      "url": "https://github.com/tom110/obj23dtiles"
     }
   ],
   "keywords": [
     "obj",
-    "gltf"
+    "3dtiles"
   ],
-  "homepage": "https://github.com/CesiumGS/obj2gltf",
+  "homepage": "https://github.com/tom110/obj23dtiles",
   "repository": {
     "type": "git",
-    "url": "git@github.com:CesiumGS/obj2gltf.git"
+    "url": "git@github.com:tom110/obj23dtiles.git"
   },
   "bugs": {
-    "url": "https://github.com/CesiumGS/obj2gltf/issues"
+    "url": "https://github.com/tom110/obj23dtiles/issues"
   },
   "main": "index.js",
   "engines": {
@@ -56,6 +56,6 @@
     "cloc": "gulp cloc"
   },
   "bin": {
-    "obj2gltf": "./bin/obj2gltf.js"
+    "obj2gltf": "./bin/obj23tiles.js"
   }
 }
